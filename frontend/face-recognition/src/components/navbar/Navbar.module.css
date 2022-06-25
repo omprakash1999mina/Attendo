@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=fallback");
+
+/* This page is for styling of navbar.js, NormalNavbar.js */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-color: #1b0c3d;
+  width: 100%;
+  height: 73px;
+  transition-property: all;
+  transition-duration: 150ms;
+}
+
+.iconContainer {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    color: #009cda;
+}
+
+.iconName {
+  font-size: 32px;
+  background: -webkit-linear-gradient(#eee, #009cda);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0px;
+  margin-left: 15px;
+  font-weight: 600;
+}
+.navList {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  justify-content: flex-end;
+  padding-inline-start: 0px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 20%; */
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 5px;
+  margin-left: 15px;
+  margin-top: 12px;
+}
+
+.navList li {
+  list-style: none;
+  margin: 0px 20px;
+}
+.link,
+.linkAdmin,
+.adminHeading {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+.adminHeading {
+  justify-content: right;
+  flex-grow: 1;
+  padding-right: 20px;
+}
+.link:hover,
+.linkAdmin:hover {
+  color: #009cda;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.linkAdmin {
+  display: none;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* width: 5%; */
+  cursor: pointer;
+}
+.profile img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #fff;
+}
+.select {
+  position: absolute;
+  right: 0px;
+  top: 73px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #4a89d9;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%), inset 0px 1px 0px rgb(255 255 255 / 30%);
+}
+.selectLink {
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+.selectLink:hover {
+  color: #009cda;
+  cursor: pointer;
+}
+.hide {
+  display: none;
+}
+.burger,.burgerAdmin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  margin: 21px 10px;
+  cursor: pointer;
+}
+.burger:hover {
+  cursor: pointer;
+}
+
+.burgerAdmin{
+  display:none
+}
+
+Try This Cross In CSS .close {
+  position: absolute;
+  right: 10px;
+  top: 21px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  margin: 21px 10px;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before,
+.close:after {
+  position: absolute;
+  /* left: 15px; */
+  content: " ";
+  top: 0;
+  right: 20px;
+  height: 33px;
+  width: 4px;
+  background-color: #fff;
+
+  transition: ease-in-out 0.3s;
+  margin: 21px 10px;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+.line {
+  border: 2px solid white;
+  border-radius: 3px;
+  margin: 3px 7px;
+  width: 35px;
+  display: none;
+  background-color: white;
+}
+.smallScreen {
+  display: none;
+}
+
+.adminButton {
+  width: 170px;
+  height: 40px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  background-color: #009cda;
+  margin-right: 30px;
+  color: #fff;
+  font-size: 20px;
+}
+.adminButton:hover {
+  cursor: pointer;
+  background-color: #0280b2;
+}
+.linkAdminBtn {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 300;
+  transition: all 0.3s ease-in-out;
+}
+.hand {
+  animation: handMotion 1s linear infinite;
+}
+.adminHeading:hover .hand {
+  animation: handMotion 0.5s linear infinite;
+}
+@keyframes handMotion {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Responsive Navbar */
+@media only screen and (max-width: 925px) {
+  .line {
+    display: block;
+  }
+  .adminLogo {
+    width: 100%;
+  }
+  .smallScreen {
+    display: block;
+  }
+  .bigScreen {
+    display: none;
+  }
+  .adminButton {
+    display: none;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .navbar,
+  .profile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .link,
+  .linkAdmin {
+    width: 100%;
+    padding: 0px;
+    /* padding-left: 10px; */
+  }
+  .linkAdmin {
+    display: flex;
+  }
+  .adminHeading {
+    display: none;
+  }
+  .navList {
+    margin-top: 60px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+  }
+  .navList li {
+    display: flex;
+    align-items: center;
+    margin: 5px 0px;
+    width: 100%;
+    height: 40px;
+  }
+  .select {
+    right: calc(50%);
+    transform: translateX(50%);
+    top: 260px;
+  }
+  .hideVisibility {
+    display: none;
+  }
+  .visible {
+    display: block !important;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+  }
+  .expandNav {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .adminLogo {
+    width: fit-content;
+
+  }
+  .burgerAdmin{
+    display:flex;
+    flex-grow: 1;
+  }
+  .iconContainer{
+    position: absolute;
+    left: 0
+  }
+}
+@media only screen and (max-height: 325px) {
+  .expandNav {
+    max-height: 325px;
+    overflow-y: scroll;
+  }
+}

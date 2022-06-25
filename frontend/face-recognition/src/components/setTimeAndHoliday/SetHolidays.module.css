@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=fallback");
+
+.mainHolidayContainer {
+  width: 90%;
+  margin-top: 30px;
+}
+
+.headingHoliday {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 28px;
+  color: white;
+  text-align: left;
+  margin: 10px 0px;
+}
+.container {
+  width: 100%;
+  background-color: #403066;
+  border-radius: 10px;
+  box-shadow: 1px 1px #615088;
+  padding: 20px 0px;
+}
+.getHolidays {
+  padding: 0px 20px;
+}
+.holidaysContainer {
+  height: 36px;
+  width: 100%;
+  background: #2b1a52;
+  border: 0.5px solid #8c8c8c;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.holidaysText {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  color: white;
+  padding: 0px 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dayContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 160px));
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.dateContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(85px, 85px));
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.setUpdateContainer {
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.setUpdateText {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  color: white;
+  margin: 0px;
+  text-align: left;
+}
+
+.modalOpenBtn,
+.modalOpenBtnSmallScreen {
+  width: 205px;
+  height: 36px;
+  background: #009cda;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  border-radius: 6px;
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.checkboxDay {
+  height: 18px;
+  width: 18px;
+  margin: 0px;
+}
+.labelHolidayTitle {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  color: white;
+  text-align: left;
+  margin-top: 0px;
+}
+
+.labelDay {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  color: white;
+}
+
+.separator {
+  width: 100%;
+  color: white;
+  background-color: #ffffff;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.btnContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+
+.submit {
+  width: 170px;
+  height: 36px;
+  background: #009cda;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  border-radius: 6px;
+}
+.modalOpenBtnSmallScreen {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .labelHolidayTitle {
+    font-size: 21px;
+  }
+  .setUpdateText {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .headingHoliday {
+    font-size: 22px;
+    text-align: center;
+  }
+  .mainHolidayContainer {
+    width: 100%;
+  }
+  .container {
+    background: transparent;
+    border-top: 1px solid #615088;
+    border-bottom: 1px solid #615088;
+    border-radius: 0px;
+    box-shadow: none;
+  }
+  .getHolidays {
+    padding: 0px 10px;
+  }
+  .setUpdateContainer {
+    padding: 0px 10px;
+  }
+  .modalOpenBtn {
+    display: none;
+  }
+  .modalOpenBtnSmallScreen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95px;
+    background: #54417d;
+    color: #00b7ff;
+  }
+}
+@media screen and (max-width: 370px) {
+  .labelHolidayTitle {
+    font-size: 18px;
+  }
+  .setUpdateText {
+    font-size: 18px;
+  }
+  .modalOpenBtnSmallScreen {
+    font-size: 18px;
+  }
+}

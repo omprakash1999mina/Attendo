@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=fallback");
+
+.calendar {
+  width: 650px;
+  background-color: rgb(239, 239, 239);
+  border-radius: 16px;
+  /* box-shadow: 1px 1px 2px rgba(255, 255, 255); */
+  background-color: #30244e;
+  height: fit-content;
+  margin-top: 20px;
+}
+.header {
+  width: 100%;
+  height: 78px;
+  background: #3e2b67;
+  border-radius: 16px 16px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.heading {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 28px;
+  color: #ffffff;
+  margin: 0px;
+  margin-left: 25px;
+}
+.monthContainer {
+  width: 100px;
+  height: 40px;
+  color: #009cda;
+  background: #54417d;
+  border-radius: 8px;
+  border-right: 1px solid #a6a6a6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25px;
+}
+.month {
+  margin: 0px;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.weekRow {
+  display: flex;
+}
+.day {
+  position: relative;
+  width: calc(100% / 7);
+  height: 55px;
+  display: inline-block;
+  /* background-color:white; */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  z-index: 1;
+  text-align: center;
+  color: white;
+}
+.dayBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.blurDate {
+  color: rgb(138, 137, 137);
+}
+.selected {
+  background-color: red;
+}
+.absentMark {
+  width: 6px;
+  height: 6px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+}
+.presentMark {
+  width: 6px;
+  height: 6px;
+  background-color: rgb(0, 255, 0);
+  border-radius: 50%;
+  display: inline-block;
+}
+.holidayMark {
+  width: 6px;
+  height: 6px;
+  background-color: rgb(255, 162, 0);
+  border-radius: 50%;
+  display: inline-block;
+}
+.notMarkedMark {
+  width: 6px;
+  height: 6px;
+  background-color: #5a3af5;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.before {
+  color: rgb(191, 189, 189);
+}
+
+.greenTick {
+  width: 30px;
+  height: 30px;
+}
+.today {
+  width: 30px;
+  height: 30px;
+  color: white;
+  background-color: #009cda;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bottomContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 0px 20px;
+}
+.bottomLeftContainer,
+.bottomRightContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  width: 45%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.bottomRightContainer {
+  width: 55%;
+}
+.infoDiv {
+  display: flex;
+  align-items: center;
+  /* justify-content:space-evenly; */
+  gap: 10px;
+}
+.info {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1200px) {
+  .calendar {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .calendar {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .calendar {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .calendar {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .calendar {
+    width: calc(100vw - 40px);
+    background-color: transparent;
+    border: 1px solid #fff;
+  }
+  .bottomLeftContainer,
+  .bottomRightContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header {
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+  }
+}
+@media screen and (max-width: 440px) {
+  .heading {
+    font-size: 20px;
+    margin-left: 15px;
+  }
+  .monthContainer{
+    margin-right: 15px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .calendar {
+    width: calc(100vw - 20px);
+  }
+  .monthContainer {
+    width: 60px;
+    min-width: fit-content;
+    padding-left: 5px;
+    padding-right:5px
+  }
+  .month,
+  .heading {
+    font-size: 16px;
+  }
+}

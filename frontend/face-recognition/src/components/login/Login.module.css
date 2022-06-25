@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+/*This css file is for the styling of login page*/
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 100vh;
+  background: #140536;
+  min-height: 100vh;
+  overflow-y: hidden;
+  width: 100%;
+}
+.innerContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: fit-content;
+  background: linear-gradient(
+    269.59deg,
+    rgba(0, 136, 190, 0.81) 0.33%,
+    #240c5a 96%
+  );
+  min-height: 100vh;
+  height: 100vh;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+
+.imageContainerSignIn {
+  width: 53vw;
+  height: 100vh;
+}
+.image{
+  width:100%;
+  height: 100%;
+}
+
+.iconContainer,.iconContainerSmallScreen {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 30px;
+  cursor: pointer;
+}
+.iconContainerSmallScreen{
+  display:none
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+    color: #009cda;
+}
+
+.iconName {
+  font-size: 32px;
+  background: -webkit-linear-gradient(#eee, #009cda);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0px;
+  margin-left: 15px;
+  font-weight: 600;
+}
+
+.formContainer {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  width: 47vw;
+}
+
+.container {
+  padding: 20px;
+  padding-top: 0px;
+  width: 70%;
+}
+
+.formTitle {
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.inputBox {
+  margin-bottom: 12px;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.inputLabel {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  color: #ecf1f4;
+}
+
+.input {
+  border: 1px solid rgb(167, 164, 164);
+  font-size: 20px;
+  width: calc(100% - 32px);
+  height: 36px;
+  padding: 0px 15px;
+  background: #36255d;
+  box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 22px;
+  color: #dadada;
+}
+
+.input::placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: #a2a2a2;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.forgotPassword{
+  text-align: right
+}
+.forgotText{
+  margin-bottom:-14px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size:16px;
+  font-style: normal;
+  color:#ff0000;
+  cursor: pointer;
+
+}
+
+.signInbtn {
+  width: 100%;
+  height: 48px;
+  background-color: #009cda;
+  border-radius: 8px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.signInbtn:hover {
+  background-color: #0295cf;
+}
+
+@media screen and (max-height: 370px) {
+  .mainContainer {
+    height: fit-content;
+    min-height: 100vh;
+  }
+  .innerContainer {
+    height: fit-content;
+    min-height: 100vh;
+  }
+}
+
+@media screen and (max-width:1300px) {
+  .image{
+   width: 109%;
+  }
+  .container{
+    width:80%
+  }
+}
+@media screen and (max-width:1100px){
+  .formTitle{
+    font-size:30px
+  }
+  .image{
+    width: 116%;
+  }
+  .input{
+    width: calc(100% - 16px);
+    padding: 0px 7px;
+  }
+  .container{width:90%}
+}
+@media screen and (max-width:950px){ 
+  .input{
+    font-size:18px
+  }
+}
+@media screen and (max-width:850px){
+  .image{
+    width: 115%;
+  }
+  .formTitle{
+    font-size:28px
+  }
+  .input{
+    font-size:16px
+  }
+}
+@media screen and (max-width:768px){
+  .formTitle{
+    margin-bottom:25px;
+    font-size:26px
+  }
+  .container{width:100%}
+}
+
+@media screen and (max-width:600px){
+  .imageContainerSignIn{
+    display:none;
+  }
+  .formContainer{
+    width:100vw
+  }
+  .container{
+    width: 80%;
+  }
+  .iconContainer{
+    display:none
+  }
+  .iconContainerSmallScreen{
+    display: flex;
+    left: 30px;
+    margin-left:0px
+  }
+  
+}
+@media screen and (max-height:600px){
+  .innerContainer{
+    height: fit-content;
+    min-height: 600px
+  }
+  .mainContainer {
+    height: fit-content;
+    min-height: 600px;
+  }
+  .imageContainerSignIn{
+    min-height:600px
+  }
+
+}
+@media screen and (max-width:400px){
+  .container{
+    width: 90%
+  }
+  .formTitle{
+    font-size:26px
+  }
+}

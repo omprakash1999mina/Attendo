@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=fallback");
+
+.mainTimeContainer {
+  width: 90%;
+}
+
+.headingTime {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 28px;
+  color: white;
+  text-align: left;
+  margin: 10px 0px;
+}
+.container {
+  width: 100%;
+  background-color: #403066;
+  border-radius: 10px;
+  box-shadow: 1px 1px #615088;
+}
+.innerContainer {
+  height: 48px;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.currentTimeContainer {
+  height: 70px;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.currTimeText {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+}
+
+.currentTime {
+  height: 32px;
+  width: 170px;
+  background: #2b1a52;
+  border: 0.5px solid #8c8c8c;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.setTimeContainer,
+.updateTimeContainer {
+  /* height:48px; */
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.labelTime {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+  display: block;
+  margin-bottom: 0px;
+}
+
+.select {
+  width: 50%;
+  height: 36px;
+  background: #2b1a52;
+  border: 0.5px solid #8c8c8c;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: 18px 0px;
+  color: #ffffff;
+  padding: 0px 10px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+}
+.submitTime {
+  width: 170px;
+  height: 36px;
+  background: #009cda;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  border-radius: 6px;
+}
+.option {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.separator {
+  width: 100%;
+  color: white;
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 800px) {
+  .select {
+    width: 100%;
+  }
+  .form {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .labelTime {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .currentTimeContainer {
+    height: fit-content;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .currentTime {
+    margin-top: 0px;
+    margin-bottom: 8px;
+  }
+  .headingTime {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .headingTime {
+    text-align: center;
+  }
+  .mainTimeContainer {
+    width: 100%;
+  }
+  .container {
+    background: transparent;
+    border-top: 1px solid #615088;
+    border-bottom: 1px solid #615088;
+    border-radius: 0px;
+    box-shadow: none;
+  }
+  .currentTimeContainer {
+    padding: 0px 10px;
+  }
+  .updateTimeContainer {
+    padding: 0px 10px;
+  }
+  .submitTime {
+    background: #54417d;
+    color: #00b7ff;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .currTimeText {
+    font-size: 18px;
+  }
+  .currentTime {
+    height: 28px;
+    font-size: 18px;
+  }
+  .select {
+    height: 28px;
+    font-size: 18px;
+  }
+  .submitTime {
+    width: 160px;
+    height: 35px;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=fallback");
+
+.sideBar {
+  width: 300px;
+  background-color: #402063;
+  min-height: calc(100vh - 73px);
+  height: 100%;
+  display: inline;
+  margin-top: 73px;
+  position: fixed;
+}
+.sideBarSmallScreen {
+  width: 100vw;
+  background-color: #402063;
+  min-height: 100vh;
+  height: fit-content;
+  display: none;
+  /* margin-top: 73px; */
+  position: fixed;
+  z-index: 10;
+}
+.close {
+  display: none;
+}
+@media screen and (min-width: 1800px) {
+  .sideBar {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .sideBar {
+    width: 65px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sideBar {
+    display: none;
+  }
+  .sideBarSmallScreen {
+    display: inline;
+  }
+  .close {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    right: 20px;
+    top: 30px;
+    color: #fff;
+    font-size: 20px;
+  }
+}
+
+/* Main SideNavBar Style */
+.mainSideNavbar {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 32px;
+  color: white;
+  text-align: left;
+  height: 38px;
+  width: 90%;
+  margin: 0.67em 0px;
+  text-decoration: none;
+  cursor: pointer;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.optionName {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.svg {
+  width: 30px;
+  display: none;
+}
+.selected,
+.item:hover {
+  border-radius: 8px;
+  border-right: 1px solid #a6a6a6;
+  background: #54417d;
+  color: #58c3ed;
+}
+
+@media screen and (max-width: 1200.9px) and (min-width: 600.5px) {
+  .optionName {
+    display: none;
+  }
+  .svg{
+    display: flex;
+  }
+  .item {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .selected,
+  .item:hover {
+    width: 50px;
+    border-radius: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .optionName {
+    display: block;
+  }
+  .selected,
+  .item:hover {
+    width: 90%;
+    border-radius: 4px;
+  }
+  .mainSideNavbar {
+    width: 100vw;
+    height: calc(100vh - 50px);
+    justify-content: center;
+    gap: 20px;
+    min-height: 470px;
+  }
+  .selected,
+  .item:hover {
+    background: none;
+    border-right: 1px solid #009cda;
+  }
+  .item {
+    justify-content: center;
+  }
+}
+
+
+
+/* Dept. Side Navbar Styles */
+.deptTopSection {
+  width: 100%;
+
+  padding: 10px 0px 10px 15px;
+}
+.deptBackLink {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  text-decoration: none;
+}
+.link{
+  text-decoration: none;
+}
+.icon2 {
+  display: none;
+}
+.icon1 {
+  color: #fff;
+}
+.back {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 32px;
+  color: white;
+}
+.middleContainer {
+  padding-left: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid #fff;
+}
+
+.iconContainer {
+  width: 140px;
+  height: 140px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.abv {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 32px;
+  color: #ffffff;
+}
+.deptName {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  color: #ffffff;
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+  margin: 20px 0px 25px;
+}
+.bottomContainer {
+  display: flex;
+  align-items: center;
+  padding-top: 12px;
+  padding-left: 20px;
+  gap: 10px;
+}
+.addIcon {
+  color: #fff;
+  font-size: 22px;
+}
+.text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1200px) and (min-width:600px) {
+  .icon1,
+  .back,
+  .deptName,
+  .text {
+    display: none;
+    padding-left: 0px;
+  }
+  .icon2 {
+    display: flex;
+    color: #ffffff;
+    font-size: 40px;
+  }
+  .deptTopSection,
+  .bottomContainer,
+  .middleContainer,
+  .deptBackLink {
+    padding-left: 0px;
+    justify-content: center;
+  }
+  .middleContainer {
+    display: flex;
+    align-items: center;
+  }
+  .iconContainer {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 20px;
+  }
+  .abv {
+    font-weight: 500;
+    font-size: 28px;
+  }
+  .addIcon {
+    font-size: 40px;
+  }
+}

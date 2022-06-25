@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=fallback");
+
+/* This page is for styling of Employees.jsx */
+.mainContainer {
+  margin-top: 73px;
+  min-height: calc(100vh - 73px);
+  height: fit-content;
+  background-color: #140536;
+  width: calc(100vw - 300px);
+  margin-left: 300px;
+  display: grid;
+  flex: 1 1;
+  grid-auto-rows: max-content;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
+  column-gap: 20px;
+  justify-content: space-evenly;
+  padding: 0px 20px;
+}
+
+.noEmployeeDiv {
+  margin-top: 73px;
+  margin-left: 300px;
+  min-height: calc(100vh - 73px);
+  height: fit-content;
+  width: calc(100vw - 300px);
+  background-color: #140536;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.noEmployeeText {
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 600;
+  font-style: normal;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 1800px) {
+  .mainContainer,
+  .noEmployeeDiv {
+    width: calc(100vw - 400px);
+    margin-left: 400px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .mainContainer,
+  .noEmployeeDiv {
+    width: calc(100vw - 65px);
+    margin-left: 65px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .mainContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mainContainer,
+  .noEmployeeDiv {
+    width: calc(100vw);
+    margin-left: 0px;
+  }
+  .noEmployeeText {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=fallback");
+
+/* This page is for styles of Webcam.js */
+.pageContainer {
+  width: 100vw;
+}
+
+.mainContainer {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background-color: #140536;
+  /* flex-wrap: wrap; */
+  width: 100%;
+}
+.topContainer {
+  position: absolute;
+  margin-top: 35px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1260px;
+  width: 100vw;
+}
+.iconContainer {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    color: #009cda;
+}
+
+.iconName {
+  font-size: 32px;
+  background: -webkit-linear-gradient(#eee, #009cda);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0px;
+  margin-left: 15px;
+  font-weight: 600;
+}
+.btnAdmin {
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #009cda;
+  /* margin-right: 40px; */
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.container {
+  /* margin-top:73px; */
+  display: flex;
+  min-height: calc(100vh - 80px);
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background-color: #140536;
+  /* flex-wrap: wrap; */
+  width: 100%;
+  padding-top:80px
+}
+.webCamContainer {
+  position: relative;
+  margin: 20px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+.rightContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.welcome,.welcomeSmallScreen {
+  background: -webkit-linear-gradient(#eee, #009cda);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+}
+.welcomeSmallScreen{
+    display:none
+}
+.btnContainer {
+  min-width: 400px;
+  /* height: 300px; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btnAttendence {
+  width: 450px;
+  height: 55px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  background: #009cda;
+  color: #fff;
+}
+.btnAttendence:hover {
+  cursor: pointer;
+}
+.btnSeeAttendence {
+  width: 450px;
+  height: 55px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  color: #009cda;
+  background: transparent;
+  border: 3px solid #009cda;
+  cursor: pointer;
+}
+.btnSeeAttendence:hover {
+  cursor: pointer;
+}
+.changeWebcanConfig {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+.disabled {
+  background-color: red;
+}
+@media screen and (max-width: 1350px) {
+  .webCamContainer {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width:1290px){
+    .container{
+        gap:0px;
+        justify-content:space-between;
+    }
+    .webCamContainer{
+        margin-left:25px
+    }
+    .btnAdmin{
+        margin-right: 25px;
+    }
+    .iconContainer{
+        margin-left:25px;
+    }
+    .rightContainer{
+        margin-right: 25px;
+    }
+}
+
+
+@media screen and (max-width: 1050px) {
+  .btnAttendence,.btnSeeAttendence,.btnContainer {
+    width: 400px;
+  }
+  .welcome{
+      font-size: 38px;
+      margin:0px
+  }
+}
+@media screen and (max-width: 925px) {
+  .btnContainer {
+    height: 100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: 0px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .welcome{
+      display: none;
+  }
+  .welcomeSmallScreen{
+      display: block;
+      font-size:45px;
+      margin-bottom:20px
+  }
+  .container{
+      justify-content: center
+  }
+  .rightContainer{
+    margin-right: 0px;
+    height:fit-content;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+.btnContainer{
+    height:fit-content;
+
+}
+.btnAttendence,.btnSeeAttendence{
+    width:500px
+}
+}
+@media screen and (max-width: 540px) {
+  .webCamContainer {
+    margin: 20px 10px;
+  }
+  .btnAttendence,.btnSeeAttendence{
+      width:calc(100vw - 40px)
+  }
+  .welcomeSmallScreen{
+      font-size:40px
+  }
+  
+}
+
+@media screen and (max-width:420px){
+    .welcomeSmallScreen{
+        font-size:36px
+    }
+   .btnAdmin{
+    font-size: 15px;
+    padding: 9px;
+    border-radius: 8px;
+   }
+   .iconContainer,.iconName{
+       font-size:20px
+   }
+   .icon{
+       width:25px;
+       height:25px
+   }
+}
+
+@media screen and (max-width:380px) {
+    .welcomeSmallScreen{
+        font-size:30px
+    }
+}

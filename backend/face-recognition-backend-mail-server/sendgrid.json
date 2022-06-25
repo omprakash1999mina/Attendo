@@ -1,0 +1,23 @@
+{
+    "from": {
+        "name": "Teach Developers",
+        "email": "devansh@techdevelopers.live"
+    },
+    "personalizations": [
+        {
+            "to": [
+                {
+                    "name": "user",
+                    "email": "devansh.gaur.iitbhu20@gmail.com"
+                }
+            ],
+            "dynamic_template_data": {
+                "code": "532252",
+                "company": "TECH DEVELOPERS",
+                "email": "devansh.gaur.iitbhu20@gmail.com",
+                "userName": "Devansh Gaur"
+            }
+        }
+    ],
+    "template_id": "d-45d5309937ac4affb0c9a221e761ddcb"
+}

@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=fallback");
+
+.cardContainer {
+  width: 250px;
+  height: 320px;
+  background-color: #372b54;
+  border-radius:8px;
+  margin: 20px 0px;
+}
+.link{
+  text-decoration: none;
+}
+.topSection {
+  width: 100%;
+  height: 173px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border-bottom: 0.5px solid #d1d1d1;
+}
+.imageContainer {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: white;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.userName {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+  margin: 0px;
+  text-align: center;
+}
+.rank {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #d1d1d1;
+  margin: 0px;
+  text-align: center;
+}
+.heading {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #e5e5e5;
+  margin-bottom: 0px;
+}
+.prevText{
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 15px;
+  text-align: center;
+  color: #d1d1d1;
+  margin-top: 0px;
+}
+.presentDays {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #ffffff;
+}
+.text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #d1d1d1;
+}
+.totalDays {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.presentPercent {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: #ffffff;
+}
+
+.outerCircle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.innerCircle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #30244e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bottomInnerSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  gap: 1px;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}

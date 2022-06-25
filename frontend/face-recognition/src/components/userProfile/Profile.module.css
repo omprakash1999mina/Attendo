@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=fallback");
+
+.main {
+  width: 450px;
+  height: 466px;
+  background: #30244e;
+  border-radius: 16px;
+  margin-top: 20px;
+}
+.topContainer {
+  width: 100%;
+  height: 78px;
+  background: #3e2b67;
+  border-radius: 16px 16px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 28px;
+  color: #ffffff;
+  margin: 0px;
+}
+.middleContainer {
+  height: 165px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  gap: 20px;
+}
+
+.imageContainer {
+  width: 102px;
+  height: 102px;
+  margin-left: 35px;
+  margin-right: 12px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.userInfo {
+  height: 102px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+}
+.name {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #e0e0e0;
+  width: 273px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rank {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #a6a6a6;
+}
+
+.innerBottomContainer {
+  height: 70px;
+  width: 100%;
+  border-top: 1px solid #70658a;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  width: 33%;
+  padding-left: 32px;
+  margin: 0px;
+  text-align: left;
+}
+
+.answer {
+  width: 55%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #a6a6a6;
+  margin: 0px;
+  text-align: left;
+  overflow-x: auto;
+}
+.answer::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    width: 400px;
+  }
+  .middleContainer {
+    gap: 5px;
+  }
+  .imageContainer {
+    margin-left: 22px;
+  }
+  .name {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .main {
+    width: 350px;
+  }
+  .name {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .main {
+    margin: 20px;
+    width: 450px;
+  }
+  .middleContainer {
+    gap: 40px;
+  }
+  .imageContainer {
+    margin-left: 32px;
+  }
+  .name {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .topContainer {
+    display: none;
+  }
+  .main {
+    background: none;
+    height: fit-content;
+    width: calc(100% - 40px);
+  }
+  .middleContainer {
+    flex-direction: column;
+    height: fit-content;
+    gap: 0px;
+  }
+  .imageContainer {
+    margin: 0px;
+  }
+  .rank {
+    text-align: center;
+    width: 100%;
+  }
+  .name {
+    width: 80vw;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 440px) {
+  .header {
+    padding-left: 22px;
+  }
+  .answer {
+    width: 50%;
+  }
+  .innerBottomContainer {
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 380px) {
+  .main {
+    width: calc(100% - 20px);
+  }
+  .header {
+    padding-left: 10px;
+  }
+  .name {
+    width: 90vw;
+  }
+}

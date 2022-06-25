@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=fallback");
+
+/* This page is for styling of addParticipants.jsx */
+.mainContainer {
+  width: 100%;
+  margin-top: 73px;
+  min-height: calc(100vh - 73px);
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #140536;
+}
+
+.container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+.title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: #e9e9e9;
+  text-align: center;
+  margin-top: 0px;
+}
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #bdbdbd;
+  text-align: left;
+}
+.input {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  width: 100%;
+  height: 30px;
+  background: #2b1a52;
+  border: 0.5px solid #8c8c8c;
+  border-radius: 4px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #e9e9e9;
+  padding-left: 5px;
+  
+}
+.input:focus{
+  outline: none;
+}
+.input::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #a6a6a6;
+}
+
+.inputGroup {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  width: 100%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.inputImage {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #e9e9e9;
+}
+.btnGetEncodings {
+  height: 35px;
+  width: 150px;
+  background-color: #009cda;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btnSubmit {
+  height: 35px;
+  width: 150px;
+  background-color: #009cda;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 570px) {
+  .container {
+    width: calc(100% - 40px);
+    border: none;
+  }
+  .input,
+  .inputGroup {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 370px) {
+  .title {
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+.mainContainer {
+  margin-top: 73px;
+  min-height: calc(100vh - 73px);
+  height: fit-content;
+  background-color: #140536;
+  width: calc(100vw - 300px);
+
+  margin-left: 300px;
+}
+
+.createDept {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+.create {
+  width: fit-content;
+  background-color: #009cda;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 4px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.create:hover{
+  cursor: pointer;
+}
+
+.container {
+  display: grid;
+  flex: 1 1 0px;
+  grid-template-columns: repeat(auto-fill, minmax(264px, 264px));
+  column-gap: 20px;
+  justify-content:space-evenly;
+  padding:0px 20px;
+}
+
+@media screen and (min-width: 1800px) {
+  .mainContainer {
+    width: calc(100vw - 400px);
+    margin-left: 400px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .mainContainer {
+    width: calc(100vw - 65px);
+    margin-left: 65px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .mainContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mainContainer {
+    width: calc(100vw);
+    margin-left: 0px;
+  }
+}
+
+.cardContainer {
+  width: 264px;
+  height: 220px;
+  border-radius: 8px;
+  background: #372b54;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px 0px;
+}
+.link{
+  text-decoration: none;
+}
+.imageContainer {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+}
+.abv {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: #ffffff;
+  margin: 0px;
+}
+.nameContainer {
+  width: 90%;
+}
+.name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  white-space: nowrap;
+  margin: 0px;
+  text-align: center;
+}
+@media screen and (min-width: 2124px)  and (max-width:2407.9px) {
+    .cardContainer{
+        width: calc((100vw - 540px) / 6);
+    }
+    .container{
+        grid-template-columns: repeat(auto-fill, minmax(calc((100vw - 540px) / 6),calc((100vw - 540px) / 6)));
+    }
+}
+@media screen and (min-width: 1840px)  and (max-width:2123.9px) {
+    .cardContainer{
+        width: calc((100vw - 520px) / 5);
+    }
+    .container{
+        grid-template-columns: repeat(auto-fill, minmax(calc((100vw - 520px) / 5),calc((100vw - 520px) / 5)));
+    }
+}
+@media screen and (max-width:1839.9px) and (min-width:1800px) {
+    .cardContainer{
+        width: calc((100vw - 500px) / 4);
+    }
+    .container{
+        grid-template-columns: repeat(auto-fill, minmax(calc((100vw - 500px) / 4),calc((100vw - 500px) / 4)));
+    }
+}
+
+@media screen and (max-width:1740px) and (min-width:1456px) {
+    .cardContainer{
+        width: calc((100vw - 400px) / 4);
+    }
+    .container{
+        grid-template-columns: repeat(auto-fill, minmax(calc((100vw - 400px) / 4),calc((100vw - 400px) / 4)));
+    }
+}
+
+@media screen and (max-width: 1456px) and (min-width: 1200px) {
+    .cardContainer{
+        width: calc((100vw - 380px) / 3);
+    }
+    .container{
+        grid-template-columns: repeat(auto-fill, minmax(calc((100vw - 380px) / 3),calc((100vw - 380px) / 3)));
+    }
+
+}
+@media screen and (max-width:1200px) and (min-width:937px){
+    .cardContainer{
+        width: calc((100vw - 65px - 80px) / 3);
+    }
+    .container{
+        grid-template-columns: repeat(auto-fill, minmax(calc((100vw - 65px - 80px) / 3),calc((100vw - 65px - 80px) / 3)));
+    }
+}
+@media screen and (max-width:937px) and (min-width:660px){
+    .cardContainer{
+        width: calc((100vw - 65px - 60px) / 2);
+    }
+    .container{
+        grid-template-columns: repeat(auto-fill, minmax(calc((100vw - 65px - 60px) / 2),calc((100vw - 65px - 60px) / 2)));
+    }
+}
+@media screen and (max-width:660px) and (min-width:600px){
+    .cardContainer{
+        width: calc(100vw - 65px - 40px);
+    }
+    .container{
+        grid-template-columns: repeat(auto-fill, minmax(calc(100vw - 65px - 40px),calc(100vw - 65px - 40px)));
+    }
+    
+}
+
+@media screen and (max-width:587.9px){
+    .cardContainer{
+        width: calc(100vw - 40px);
+    }
+    .container{
+        grid-template-columns: repeat(auto-fill, minmax(calc(100vw - 40px),calc(100vw - 40px)));
+    }
+    
+}
