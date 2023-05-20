@@ -159,7 +159,7 @@ Once you've downloaded the boilerplate and installed all the prerequisites, you'
 ## Get started with Backend(Node)
 - Our Node Backend Url 
      ```bash
-     https://apis.techdevelopers.live
+     https://attendo.cyclic.app/
     ```
 - Open the Node backend folder (Engage Project/backend/face-recognition-backend-node) and open the folder in VS Code.
 
