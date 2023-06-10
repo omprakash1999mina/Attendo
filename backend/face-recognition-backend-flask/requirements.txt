@@ -13,7 +13,7 @@ idna==3.3
 itsdangerous==2.1.2
 Jinja2==3.1.2
 MarkupSafe==2.1.1
-numpy==1.24.3
+numpy==1.21.0
 opencv-python==4.5.5.64
 Pillow==9.1.0
 requests==2.27.1
