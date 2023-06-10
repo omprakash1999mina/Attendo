@@ -21,7 +21,7 @@ def markAttendence():
 
     if data :
         try:
-            r = requests.get("https://apis.techdevelopers.live/api/encodings/"+data['teamName'])
+            r = requests.get("https://attendo.cyclic.app/api/encodings/"+data['teamName'])
             if(r.status_code==200):
                 jsonObject=r.json()
 
@@ -58,7 +58,7 @@ def markAttendence():
                 elif len(unknownIds)>1:
                     return make_response(jsonify({"error":"More than one faces found. Please try again individually!!"}),400)
                 else:
-                    reqPost = requests.post("https://apis.techdevelopers.live/api/user/update/attendance", json={"id": unknownIds[0],"status":"P"})
+                    reqPost = requests.post("https://attendo.cyclic.app/api/user/update/attendance", json={"id": unknownIds[0],"status":"P"})
                     if reqPost.status_code == 200:
                         return make_response(jsonify({"message":"Congratulations!! Your attendance has been marked"}),200)
                     else:
@@ -66,7 +66,7 @@ def markAttendence():
 
                     # Code for marking attandance of multiple user. Removed due to performance issues due to python
                     # for id in unknownIds:
-                    #     reqPost = requests.post("https://apis.techdevelopers.live/api/user/update/attendance", json={"id": id,"status":"P"})
+                    #     reqPost = requests.post("https://attendo.cyclic.app/api/user/update/attendance", json={"id": id,"status":"P"})
                     #     print(reqPost.status_code)
         except:
             print("Some error occured")
