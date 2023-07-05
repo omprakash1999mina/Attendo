@@ -39,12 +39,6 @@ Recognizing Faces in real time **( not implemented as of now, But sure of doing 
 3. Taking feedback from mentors and other users
 <br>
 
-
-## Video Demonstration 
-🚀 Here's the link to the video demonstration of Meet-Up 🚀
-- https://drive.google.com/drive/folders/1PD40aYAp-6myfnFkAWcEOnfpn-ZPPfs6?usp=sharing
-
-
 ## Before You Begin
 Before you begin we recommend you read about the basic building blocks that assemble my engage project:
 * MongoDB - Go through [MongoDB Official Website](http://mongodb.org/) and proceed to their [Official Manual](http://docs.mongodb.org/manual/), which should help you understand NoSQL and MongoDB better.
